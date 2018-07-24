@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewController2.swift
 //  pasingAndReceiveByDelegate
 //
 //  Created by admin on 7/17/18.
@@ -7,29 +7,20 @@
 //
 
 import UIKit
-
-
-class ViewController: UIViewController {
+protocol Delegate: class {
+    func dosomething(with data: Data)
+}
+class ViewController2: UIViewController {
     
-   var delegate: Delegate?
-    var name: String?
-    @IBOutlet weak var textField: UITextField!
+    weak var delegate: Delegate?
     
-    @IBAction func botton(_ sender: UIButton) {
-        if delegate != nil {
-            if textField.text != nil {
-                let nametext = textField.text
-                delegate?.didChose(number: Int(nametext ?? "") ?? 0)
-            }
-        }
-        navigationController?.popViewController(animated: true)
+    func passDataBackwards() {
+        let data = Data()
+        delegate?.dosomething(with: data)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        if name != nil {
-            textField.text = name
-        }
 
         // Do any additional setup after loading the view.
     }
