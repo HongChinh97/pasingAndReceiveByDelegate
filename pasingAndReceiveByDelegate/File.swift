@@ -7,6 +7,6 @@
 //
 
 import Foundation
-protocol Delegate {
-    func didChose(number: Int)
-}
+//protocol Delegate {
+//    func didChose(number: Int)
+//}

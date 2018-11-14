@@ -58,9 +58,9 @@
 		84E517D220FC99A10053070B /* pasingAndReceiveByDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				84E517D320FC99A10053070B /* AppDelegate.swift */,
 				84B7291620FD9BA500CA6693 /* TableViewController.swift */,
 				84B7291820FD9BDC00CA6693 /* ViewController.swift */,
-				84E517D320FC99A10053070B /* AppDelegate.swift */,
 				84B7291A20FD9E4300CA6693 /* File.swift */,
 				84E517D720FC99A10053070B /* Main.storyboard */,
 				84E517DA20FC99A20053070B /* Assets.xcassets */,
